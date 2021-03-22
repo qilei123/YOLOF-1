@@ -16,5 +16,7 @@ MODEL:
     DECODER:
       NUM_CLASSES: 1
 SOLVER:
+  BASE_LR: 0.06
   IMS_PER_BATCH: 32
+  WARMUP_ITERS: 3000
 OUTPUT_DIR: "/data1/qilei_chen/DATA/erosive/work_dirs_yolof/R_50_C5_1x"
