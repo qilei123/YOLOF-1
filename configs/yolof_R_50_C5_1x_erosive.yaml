@@ -1,0 +1,11 @@
+_BASE_: "Base-YOLOF.yaml"
+DATASETS:
+  TRAIN: ("erosive_train",)
+  TEST: ("erosive_test",)
+MODEL:
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  RESNETS:
+    DEPTH: 50
+  RETINANET:
+    NUM_CLASSES: 1
+OUTPUT_DIR: "/data1/qilei_chen/DATA/erosive/work_dirs_yolof/R_50_C5_1x"
